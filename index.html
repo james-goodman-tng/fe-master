@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>World Clock Dashboard</h1>
+        <p>Real-time clocks from around the world</p>
+    </header>
+    
+    <main class="dashboard">
+        <div class="clock-frame">
+            <iframe src="http://localhost:8081" title="Tokyo Clock"></iframe>
+        </div>
+        
+        <div class="clock-frame">
+            <iframe src="http://localhost:8082" title="London Clock"></iframe>
+        </div>
+        
+        <div class="clock-frame">
+            <iframe src="http://localhost:8083" title="New York Clock"></iframe>
+        </div>
+        
+        <div class="clock-frame">
+            <iframe src="http://localhost:8084" title="Sydney Clock"></iframe>
+        </div>
+        
+        <div class="clock-frame">
+            <iframe src="http://localhost:8085" title="Mumbai Clock"></iframe>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Each clock is served from an independent microservice architecture</p>
+        <p>APIs: localhost:3001-3005 | Frontends: localhost:8081-8085</p>
+    </footer>
+</body>
+</html>
